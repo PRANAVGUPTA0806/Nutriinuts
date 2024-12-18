@@ -1,0 +1,73 @@
+.imageSliderContainer {
+  margin-top: 0px;
+  width: 100%; /* Ensures full width of the container */
+  padding: 0;
+  position: relative;
+}
+
+/* Carousel Styles */
+.carousel .slide {
+  background: none;
+}
+
+.carousel .control-arrow {
+  display: none; /* Hide arrows */
+}
+
+.carousel .thumb {
+  display: none; /* Hide thumbnail navigation */
+}
+
+.carousel .carousel-status {
+  display: none; /* Hide status (e.g., "1 of 5") */
+}
+
+.carousel .control-dots .dot {
+  background: #ccc;
+  opacity: 0.7;
+  box-shadow: none;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background: #000;
+  opacity: 1;
+}
+
+/* Ensures that images in the slider are responsive and maintain a fixed height */
+.sliderImage img {
+  width: 100%;
+  height: auto; /* Allow height to adjust automatically */
+  max-height: 450px; /* Set a max height for desktop */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/* Responsive Design */
+
+/* Large Screens (Desktops) */
+@media (min-width: 1025px) {
+  .sliderImage img {
+      max-height: 450px; /* Set a fixed height for desktop */
+  }
+}
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+  .sliderImage img {
+      max-height: 350px; /* Adjust height for tablet screens */
+  }
+}
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  .sliderImage img {
+      max-height: 300px; /* Smaller height for mobile devices */
+  }
+}
+
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+  .sliderImage img {
+      max-height: 250px; /* Even smaller height for very small screens */
+  }
+}

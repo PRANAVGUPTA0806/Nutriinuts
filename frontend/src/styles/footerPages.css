@@ -1,0 +1,61 @@
+#MainContainer {
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+/* MAIN HEAD */
+#mainHead{
+    text-align: center; 
+    color: #333; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+/* FOR TEXT DATA*/
+#content{
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0; 
+}
+
+/* SECTION HEADINGS */
+#sec{
+    color: #2c3e50; /* Darker color for section headings */
+    margin-top: 20px; /* Space above the section heading */
+  }
+
+/* SUBSECTION HEADINGS */
+#sub {
+    color: #2980b9; /* Blue color for subheadings */
+    margin-top: 15px; /* Space above subheadings */
+    font-size: 20px;
+}
+
+/* LISTS */
+#ls{
+    color: #555; 
+    list-style: "- ";
+}
+
+/* MAIL IN CONTACT US */
+#mail{
+    color: #2980b9; 
+    text-decoration: none; 
+}
+
+#mail:hover {
+    text-decoration: underline;
+}
+
+/* BOLD TEXTS */
+strong {
+    color: #333; 
+}
+
+#end {
+    font-style: italic;
+}

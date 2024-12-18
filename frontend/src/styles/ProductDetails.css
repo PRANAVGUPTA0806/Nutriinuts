@@ -1,0 +1,192 @@
+#product-details {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+#product-image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+#product-image-container img {
+    width: 100%;
+    max-width: 450px; 
+    max-height: 450px; 
+    height: auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; 
+}
+
+#product-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#product-info h2 {
+    font-size: 2em; 
+    margin-bottom: 15px; 
+    color: #333; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+#product-price {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #e74c3c; 
+}
+
+#product-info .discount {
+    font-size: 1em;
+    color: #777; 
+}
+
+#product-info .rating {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1.2em; 
+}
+
+#product-description {
+    font-size: 1.2em; 
+    line-height: 1.5; 
+    margin: 20px 0; 
+    color: #555; 
+    padding: 10px; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+}
+
+#product-add-to-cart-button {
+    margin-top: 20px;
+}
+
+#product-add-to-cart-button .button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+#product-add-to-cart-button .button:hover {
+    background-color: #0056b3;
+}
+
+#product-add-to-cart-button .button.loading {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#product-add-to-cart-button .button .cart {
+    margin-left: 10px;
+}
+
+#product-add-to-cart-button .button .cart svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.offer-section {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.offer-section span {
+    color: #e74c3c; 
+    font-size: 1.5em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #product-details {
+        flex-direction: column; 
+        padding: 10px; 
+    }
+
+    #product-image-container {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    #product-info {
+        flex: 1; 
+    }
+
+    #product-info h2 {
+        font-size: 1.8em; 
+    }
+
+    #product-price {
+        font-size: 1.3em; 
+    }
+
+    #product-info .discount {
+        font-size: 0.9em; 
+    }
+
+    #product-description {
+        font-size: 1.1em; 
+    }
+
+    #product-add-to-cart-button .button {
+        font-size: 1em; 
+        padding: 10px 20px; 
+    }
+
+    .offer-section {
+        font-size: 1.1em; 
+    }
+}
+
+@media (max-width: 480px) {
+    #product-info h2 {
+        font-size: 1.6em; 
+    }
+
+    #product-price {
+        font-size: 1.2em; 
+    }
+
+    #product-info .discount {
+        font-size: 0.8em; 
+    }
+
+    #product-description {
+        font-size: 1em; 
+    }
+
+    #product-add-to-cart-button .button {
+        font-size: 0.9em; 
+    }
+
+    .offer-section {
+        font-size: 1em; 
+    }
+}

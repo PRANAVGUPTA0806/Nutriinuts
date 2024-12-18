@@ -1,0 +1,157 @@
+/* Main container for all products */
+.mainBoxContainerAllProducts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center; /* Center the cards vertically */
+  }
+  
+  /* Product Card Styling */
+  .productCard {
+    width: 100%; /* Take full width within grid */
+    max-width: 300px; /* Limit the card width */
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .productCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Product Image Styling */
+  .productImageContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+  
+  /* Product Name Styling */
+  .productNameContainer {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  /* Product Price Styling */
+  .productPriceContainer {
+    margin-top: 8px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Add to Cart Button Styling */
+  .productAddToCartButton {
+    margin-top: 10px;
+  }
+  
+  .productAddToCartButton .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #362A89;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .productAddToCartButton .button:hover {
+    background-color: #362A89;
+  }
+  
+  /* Loading State */
+  .productAddToCartButton .button.loading {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  
+  /* Large screens (1025px and above) */
+  @media (min-width: 1025px) {
+    .mainBoxContainerAllProducts {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop view */
+      gap: 20px;
+    }
+  }
+  
+  /* Tablets (768px to 1024px) */
+  @media (max-width: 1024px) {
+    .mainBoxContainerAllProducts {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+      gap: 15px;
+    }
+  
+    .productCard {
+      max-width: 250px;
+      padding: 10px;
+    }
+  
+    .productAddToCartButton .button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Mobile Devices (up to 767px) */
+  @media (max-width: 767px) {
+    .mainBoxContainerAllProducts {
+      grid-template-columns: 1fr; /* 1 column for mobile */
+      gap: 10px;
+    }
+  
+    .productCard {
+      max-width: 100%;
+      padding: 8px;
+    }
+  
+    .productNameContainer {
+      font-size: 1rem;
+    }
+  
+    .productPriceContainer {
+      font-size: 1rem;
+    }
+  
+    .productAddToCartButton .button {
+      font-size: 0.9rem;
+      padding: 6px 10px;
+    }
+  }
+  
+  /* Extra Small Devices (up to 480px) */
+  @media (max-width: 480px) {
+    .mainBoxContainerAllProducts {
+      grid-template-columns: 1fr; /* Single column for very small devices */
+      gap: 5px;
+    }
+  
+    .productCard {
+      max-width: 100%;
+      padding: 5px;
+    }
+  
+    .productNameContainer {
+      font-size: 0.9rem;
+    }
+  
+    .productPriceContainer {
+      font-size: 0.9rem;
+    }
+  
+    .productAddToCartButton .button {
+      font-size: 0.8rem;
+      padding: 5px 8px;
+    }
+  }

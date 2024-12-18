@@ -1,0 +1,218 @@
+.contactUsMainContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    background-color: white;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f3f4f6, #ffffff);
+}
+
+.contactUsDivHeading {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactUsDivHeading > h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #202070;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.8s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.feedbackFormDiv {
+    background: linear-gradient(135deg, rgba(32, 32, 112, 0.1), rgba(32, 32, 112, 0.3));
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.feedbackFormDivHeading > h1 {
+    font-size: 26px;
+    color: #202070;
+    font-weight: 600;
+    text-align: center;
+}
+
+.feedbackInputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.feedbackInputBox > input,
+.feedbackInputBox > textarea {
+    border: 1px solid #d1d5db;
+    padding: 14px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    background-color: #f9fafb;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.feedbackInputBox > input:focus,
+.feedbackInputBox > textarea:focus {
+    border-color: #202070;
+    box-shadow: 0 0 12px rgba(32, 32, 112, 0.2);
+}
+
+.feedbackInputBox > textarea {
+    resize: none;
+}
+
+
+.feedbackSubmitBtn {
+    background: #8CC63E;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(32, 32, 112, 0.2);
+    width: fit-content;
+    align-self: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.feedbackSubmitBtn:hover {
+    background: #8CC63E;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(64, 64, 192, 0.3);
+}
+
+.feedbackSubmitBtn:active {
+    transform: translateY(0px);
+    background-color: #202070;
+    box-shadow: 0 2px 8px rgba(32, 32, 112, 0.2);
+}
+
+.errorText {
+    color: #e63946;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 992px) {
+    .contactUsDivHeading > h1 {
+        font-size: 36px;
+    }
+
+    .feedbackFormDiv {
+        padding: 20px;
+    }
+
+    .feedbackFormDivHeading > h1 {
+        font-size: 22px;
+    }
+
+    .feedbackSubmitBtn {
+        padding: 12px 30px;
+    }
+
+    .feedbackInputBox > input,
+    .feedbackInputBox > textarea {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+/* Mobile Devices (Small screens) */
+@media only screen and (max-width: 768px) {
+    .contactUsDivHeading > h1 {
+        font-size: 30px;
+    }
+
+    .feedbackFormDiv {
+        padding: 16px;
+        max-width: 100%;
+    }
+
+    .feedbackFormDivHeading > h1 {
+        font-size: 20px;
+    }
+
+    .feedbackInputBox {
+        gap: 14px;
+    }
+
+    .feedbackInputBox > input,
+    .feedbackInputBox > textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .feedbackSubmitBtn {
+        padding: 10px 24px;
+    }
+}
+
+/* Extra Small Devices (phones under 576px) */
+@media only screen and (max-width: 576px) {
+    .contactUsDivHeading > h1 {
+        font-size: 26px;
+    }
+
+    .feedbackFormDiv {
+        padding: 12px;
+    }
+
+    .feedbackFormDivHeading > h1 {
+        font-size: 18px;
+    }
+
+    .feedbackInputBox {
+        gap: 10px;
+    }
+
+    .feedbackInputBox > input,
+    .feedbackInputBox > textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .feedbackSubmitBtn {
+        padding: 8px 20px;
+    }
+}

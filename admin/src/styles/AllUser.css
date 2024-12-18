@@ -1,0 +1,183 @@
+/* Main container layout */
+.admin-user-manage-container {
+    padding: 20px;
+    max-width: 900px;
+    max-height: 680px;
+    margin: 0 auto;
+    background-color: #f4f9f4; /* Softer green for better readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Adjust for search bar integration */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.admin-user-manage-content h1 {
+    text-align: center;
+    color: #28a745;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+/* Main content area */
+.admin-user-manage-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Search bar container */
+.search-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar-container input[type="text"] {
+    width: 80%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar-container input[type="text"]:focus {
+    border-color: #542eb3;
+    box-shadow: 0 0 5px rgba(84, 46, 179, 0.5);
+}
+
+.search-bar-container button {
+    padding: 10px 20px;
+    background-color: #542eb3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.search-bar-container button:hover {
+    background-color: #3e2291;
+}
+
+/* User avatar styling */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Error message styling */
+.text-danger {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table thead th {
+    background-color: #8CC63E;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s;
+}
+
+.table tbody tr:hover {
+    background-color: #e6e6e6;
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Button styles */
+.btn {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    margin-right: 6px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    margin-right: 6px;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+    border: none;
+    margin-right: 6px;
+}
+
+.btn-danger:hover {
+    background-color: darkred;
+}
+
+.btn-warning {
+    background-color: orange;
+    color: white;
+    border: none;
+    margin-right: 6px;
+}
+
+.btn-warning:hover {
+    background-color: #e69500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-user-manage-container {
+        padding: 10px;
+    }
+
+    .admin-user-manage-content h1 {
+        font-size: 22px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .search-bar-container input[type="text"] {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .search-bar-container button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}

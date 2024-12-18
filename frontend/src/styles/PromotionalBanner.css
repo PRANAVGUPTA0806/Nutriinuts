@@ -1,0 +1,22 @@
+.firstSpan{
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+.insideMarqueeContainer{
+  display: flex;
+  justify-content: center;
+  padding: 6px 0px 0px 0px;
+}
+
+@media screen and (max-width: 780px){
+.firstSpan{
+  font-size: 10px;
+  font-weight: bold;
+  
+}
+.insideMarqueeContainer{
+  display: flex;
+  justify-content: center;
+}
+}

@@ -1,0 +1,454 @@
+/* General Body Styling */
+body {
+    background-color: #f8f9fa; /* Light background for better contrast */
+    font-family: Arial, sans-serif; /* Clean font for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Main Container */
+.mainCartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    padding: 20px 5%; /* Adjusted left and right padding */
+    margin-top: 50px; /* Reduced margin for better placement */
+}
+
+/* Empty Cart Container */
+.blankCartContainer {
+    height: 550px;
+    width: 100%; /* Full width */
+    max-width: 550px; /* Max width for larger screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto; /* Center the container */
+}
+
+.blankCartContainer img {
+    margin-bottom: 20px; /* Space below the image */
+    max-width: 100%; /* Make the image responsive */
+}
+
+/* Heading Cart Delete Container */
+.headingCartDeleteContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+/* Cart Heading */
+.cartHeading {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0; /* Space above and below the heading */
+}
+
+.cartHeading > h1 {
+    font-size: 28px;
+    color: #333; /* Darker text for better contrast */
+}
+
+/* Cart Content */
+.cartContent {
+    display: flex;
+    gap: 20px; /* Increased gap for better spacing */
+    margin-bottom: 100px; /* Adjusted bottom margin */
+    width: 100%; /* Ensure it takes full width */
+    justify-content: space-between; /* Space out items */
+}
+
+/* Cart Items Container */
+.cartItemsContainer {
+    background-color: #ffffff; /* White background for the cart items */
+    border-radius: 10px; /* Slightly less rounding */
+    display: flex;
+    flex-direction: column;
+    width: 65%; /* Adjusted width for a better fit */
+    padding: 20px; /* More padding for better spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+}
+
+.cartItemsContainer h1 {
+    font-size: 22px;
+    padding: 16px 0; /* Space above and below */
+    font-weight: 600;
+    color: #555; /* Lighter color for the heading */
+}
+
+/* Cart Item Box */
+.cartItemBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px; /* Adjusted padding for better spacing */
+    margin: 10px 0; /* Reduced vertical margin for spacing between items */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle line to separate items */
+}
+
+.cartItemBox:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+/* Cart Item Details */
+.cartItemMainBox {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* Product Image */
+.cartProductImage img {
+    width: 90px;
+    height: 100px;
+    border-radius: 10px; /* Slightly rounded corners */
+}
+
+/* Product Details */
+.cartProductDetails {
+    padding-left: 10px; /* Space between image and details */
+}
+
+.cartProductName {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333; /* Dark text for product name */
+}
+
+/* Remove Button */
+.removeButton {
+    background-color: #388e3c; /* Green color */
+    padding: 8px 16px; /* Adjusted padding */
+    color: white;
+    font-weight: 600;
+    border-radius: 20px; /* Rounded button */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Add pointer cursor for button */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.removeButton:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+}
+
+/* ORDER SUMMARY CSS */
+.orderSummaryCartCard {
+    background-color: #ffffff; /* White background for order summary */
+    padding: 20px; /* More padding for better spacing */
+    width: 30%; /* Adjusted width for a better fit */
+    height: max-content;
+    border-radius: 10px; /* Slightly less rounding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+}
+
+.orderSummaryCartCard h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #333; /* Darker text for better contrast */
+}
+
+/* Summary Item Styling */
+.summaryItemCartCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0; /* Vertical padding for each item */
+}
+
+.summaryItemCartCard span {
+    font-weight: 700;
+}
+
+.summaryItemCartDivider {
+    display: flex;
+}
+
+/* APPLY COUPON STYLING */
+.couponContainerCartCard {
+    background: #f9f9f9; /* Light background to differentiate the coupon section */
+    border: 1px solid #ddd; /* Soft border for definition */
+    border-radius: 12px; /* Rounded corners */
+    margin: 20px 0; /* Space above and below */
+    display: flex;
+    align-items: center; /* Center align input and button */
+    justify-content: space-between;
+    padding: 16px; /* Increased padding for a tighter fit */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+    width: 100%; /* Make sure the container uses full width */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.couponContainerCartCard input {
+    border: 2px solid #388e3c; /* Green border for consistency */
+    border-radius: 8px; /* Slightly less rounding for a clean look */
+    padding: 12px 10px; /* Increased padding for input */
+    flex: 1; /* Allow the input to take available space */
+    min-width: 0; /* Allow it to shrink */
+    margin-right: 8px; /* Space between input and button */
+    font-size: 16px; /* Larger font for readability */
+    transition: border-color 0.3s ease-in-out; /* Smooth border color transition */
+    max-width: 200px; /* Set a maximum width to limit the input size */
+}
+
+.couponContainerCartCard button {
+    background-color: #388e3c; /* Set green background */
+    border-radius: 8px; /* Matching rounding with input */
+    padding: 10px 16px; /* Adjusted padding for a larger button */
+    color: white; /* White text for better contrast */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Pointer cursor for button */
+    font-weight: 700; /* Bolder font for prominence */
+    font-size: 14px; /* Slightly smaller font size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+    flex: 0 0 auto; /* Prevent the button from shrinking */
+}
+
+/* Keep the same green color on hover */
+.couponContainerCartCard button:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Maintain the same shadow */
+}
+
+/* Active State */
+.couponContainerCartCard button:active {
+    background-color: #1b5e20; /* Even darker green on active */
+}
+
+/* Checkout Button */
+.cartCheckoutButtonCard {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cartCheckoutButtonCard button {
+    background-color: #388e3c; /* Green color */
+    border-radius: 10px;
+    padding: 16px 24px; /* Increased padding */
+    color: white;
+    width: 100%;
+    height: 60px;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Add pointer cursor for button */
+    font-size: 18px; /* Larger font size for visibility */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.cartCheckoutButtonCard button:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+}
+
+.cartCheckoutButtonCard button:active {
+    background-color: #1b5e20; /* Even darker green on active */
+    transform: scale(0.98); /* Slight shrink effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cartContent {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: stretch; /* Stretch items to full width */
+    }
+
+    .cartItemsContainer,
+    .orderSummaryCartCard {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .cartItemBox {
+        flex-direction: column; /* Stack item details vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .removeButton {
+        width: 100%; /* Full width button */
+        margin-top: 10px; /* Space above button */
+    }
+
+    .couponContainerCartCard {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: stretch; /* Stretch elements */
+    }
+
+    .couponContainerCartCard input {
+        margin-right: 0; /* Remove margin for smaller screens */
+        margin-bottom: 10px; /* Space below the input */
+    }
+
+    .cartCheckoutButtonCard {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cartHeading > h1 {
+        font-size: 24px; /* Smaller font size for very small screens */
+    }
+
+    .cartItemBox {
+        flex-direction: column; /* Stack item details vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+
+    .cartProductImage img {
+        width: 70px; /* Smaller product image */
+        height: 80px; /* Smaller product image */
+    }
+
+    .summaryItemCartCard {
+        padding: 4px 0; /* Reduced padding for summary items */
+    }
+}
+/* Plus and Minus Buttons for Quantity Adjustment */
+.cartItemBox span {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cartItemBox span .fa-plus,
+.cartItemBox span .fa-minus {
+    background-color: #388e3c; /* Light blue background for buttons */
+    color:#388e3c; /* Dark teal for icon color */
+    padding: 6px 10px; /* Adjust padding for comfortable clicking area */
+    border-radius: 50%; /* Circular buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cartItemBox span .fa-plus:hover,
+.cartItemBox span .fa-minus:hover {
+    background-color: #388e3c; /* Slightly darker on hover */
+}
+
+/* Styling the Quantity Number */
+.cartItemBox span {
+    margin: 0 8px; /* Add space between the quantity number and buttons */
+    font-size: 16px;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .cartItemBox {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align all elements */
+        padding: 10px; /* Adjust padding for spacing */
+        width: 100%; /* Full width for consistent centering */
+        box-sizing: border-box;
+    }
+
+    /* Product Name centered at the top */
+    .cartProductDetails {
+        width: 100%; /* Full width */
+        text-align: center; /* Center-align text */
+        margin-bottom: 10px; /* Space below product name */
+    }
+
+    .cartProductName {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    /* Quantity Adjustment Buttons in the Center */
+    .cartItemBox span {
+        display: flex;
+        justify-content: center; /* Center-align quantity controls */
+        align-items: center;
+        margin: 10px 0; /* Space above and below quantity controls */
+        font-size: 16px;
+        font-weight: bold;
+        color: #388e3c;
+    }
+
+    .cartItemBox span .fa-plus,
+    .cartItemBox span .fa-minus {
+        padding: 6px 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Price at the Bottom */
+    .cartProductPrice {
+        width: 100%; /* Full width for consistency */
+        font-size: 16px;
+        font-weight: bold;
+        color: #388e3c;
+        margin-top: 10px; /* Space above the price */
+        text-align: center; /* Center the price */
+    }
+}
+/* Default Layout for Larger Screens */
+.cartItemBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* For Smaller Screens: Center and Stack Elements Vertically */
+/* For Smaller Screens: Center and Stack Elements Vertically */
+@media (max-width: 768px) {
+    .cartItemBox {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items horizontally */
+        text-align: center; /* Center-align text */
+    }
+
+    /* Product Name centered at the top */
+    .cartProductDetails {
+        width: 100%; /* Full width for consistency */
+        margin-bottom: 10px;
+        text-align: center; /* Center-align product name text */
+    }
+
+    .cartProductName {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    /* Quantity Adjustment Buttons centered */
+    .cartItemBox span {
+        display: flex;
+        justify-content: center; /* Center quantity controls */
+        align-items: center;
+        margin: 10px 0; /* Space above and below quantity controls */
+        font-size: 16px;
+        font-weight: bold;
+        color: #388e3c;
+    }
+
+    /* Add margin to the buttons for spacing */
+    .cartItemBox span .fa-plus,
+    .cartItemBox span .fa-minus {
+        padding: 6px 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 0 5px; /* Add horizontal margin for spacing */
+    }
+
+    /* Price at the Bottom, centered */
+    .cartProductPrice {
+        width: 100%; /* Full width for consistency */
+        font-size: 16px;
+        font-weight: bold;
+        color: #388e3c;
+        margin-top: 10px;
+        text-align: center; /* Center-align price text */
+    }
+}

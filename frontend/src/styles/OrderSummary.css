@@ -1,0 +1,83 @@
+/* OrderSummary.css */
+.orderSummaryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    margin-bottom: 69px;
+  }
+  
+  .orderSummaryContainer h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .orderSummaryContainer h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #444;
+  }
+  
+  .addressSummary {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .addressSummary p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .cartSummary {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .cartSummary p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .cartSummary h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .orderSummaryContainer button {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .orderSummaryContainer button:hover {
+    background-color: #0056b3;
+  }
+  
+  .orderSummaryContainer button:active {
+    background-color: #004494;
+  }
+  

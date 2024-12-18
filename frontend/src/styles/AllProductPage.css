@@ -1,0 +1,22 @@
+.borderComponentDivider{
+    
+    margin-top: 12px;
+	height: 10px;
+	box-shadow: 0 10px 10px -10px #e0e0e0 inset;
+
+}
+
+.headingContainer{
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.productCardContainer{
+    /* border: 2px solid springgreen; */
+    display: flex;
+    gap: 50px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

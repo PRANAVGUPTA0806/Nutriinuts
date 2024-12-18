@@ -1,0 +1,113 @@
+/* Payment.css */
+.paymentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+  max-width: 500px;
+  margin: 0 auto;
+  background: linear-gradient(145deg, #eafaf1, #f0fdf5);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-top: 80px;
+  margin-bottom: 80px;
+  transition: all 0.3s ease;
+}
+
+.paymentContainer h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 24px;
+  background: linear-gradient(to right, #66bb6a, #43a047);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.paymentForm {
+  width: 100%;
+}
+
+.paymentOption {
+  margin-bottom: 18px;
+}
+
+.customRadio {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #4a4a4a;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f1f8f5;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.customRadio:hover {
+  background-color: #e1f3e8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.customRadio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radioCheck {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #b2dfdb;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.radioCheck::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #43a047;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.customRadio input[type="radio"]:checked + .radioCheck {
+  border-color: #43a047;
+}
+
+.customRadio input[type="radio"]:checked + .radioCheck::after {
+  opacity: 1;
+}
+
+.payButton {
+  padding: 16px;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(145deg, #66bb6a, #43a047);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s ease;
+  width: 100%;
+  margin-top: 24px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.payButton:hover {
+  background: linear-gradient(145deg, #57a65a, #388e3c);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.payButton:active {
+  background: linear-gradient(145deg, #33691e, #2e7d32);
+  transform: translateY(1px);
+}

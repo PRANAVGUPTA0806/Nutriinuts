@@ -1,0 +1,302 @@
+/* Base Styling - Applies to both large and small screens */
+.filterComponentContainer {
+    background-color: #fff; /* White background */
+    color: black; /* Black text color for readability */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow with inset */
+    overflow-y: auto;
+    padding: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f0f0f0; /* Adjust scrollbar color to match new background */
+    position: relative;
+    left: 15px;
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+.filterComponentContainer h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: black; /* Ensuring header text is black */
+}
+
+.filterComponentContainer hr {
+    border: 1px solid #4caf50;
+    margin: 10px 0 20px;
+}
+
+.filterComponentContainer input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4caf50; /* Match checkbox border to theme color */
+    border-radius: 6px;
+    margin-right: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    background-color: transparent;
+    position: relative;
+}
+
+.filterComponentContainer input[type="checkbox"]:checked {
+    background: #4caf50; /* Green background when checked */
+    border-color: #4caf50;
+}
+
+.filterComponentContainer input[type="checkbox"]:checked::after {
+    content: '\2714'; /* Checkmark symbol */
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.filterComponentContainer label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color */
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.filterComponentContainer label:hover {
+    color: #fff;
+    background-color: #4caf50; /* Green background on hover */
+}
+
+.search-box {
+    border: 1px solid #4caf50;
+    padding: 12px;
+    width: 100%;
+    border-radius: 26px;
+    margin-top: 12px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px; /* Ensure font size matches placeholder */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.search-box:focus {
+    border-color: #e91e63; /* Pink border color on focus */
+    box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3); /* Pink shadow on focus */
+    cursor: text; /* Ensure cursor is text when focused */
+}
+
+.search-box::placeholder {
+    color: #888;
+}
+
+.allProductsHeadingBox {
+    font-size: 24px;
+    margin-bottom: 36px;
+    font-weight: 600;
+    margin-top: 28px;
+    color: #4caf50;
+}
+
+/* Grid for displaying products */
+.mainBoxContainerAllProducts1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+    gap: 30px;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+/* Product card styling */
+.productCard2 {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    
+}
+
+.productCard:hover {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.productImageContainer img {
+    max-width: 100%;
+    /* height: auto; */
+    object-fit: cover;
+}
+
+.productNameContainer {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.productPriceContainer {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.productAddToCartButton {
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button.loading {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.suggestions-list {
+    position: absolute;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    z-index: 1000;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: 6px; /* Rounded corners for suggestions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.suggestion-item:hover,
+.suggestion-item.highlighted {
+    background-color: #4CAF50; /* Green background for highlighted suggestion */
+    color: white; /* White text for highlighted suggestion */
+}
+
+/* Larger Screens */
+@media only screen and (min-width: 1000px) {
+    .shopByCategoryContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .filterComponentContainer {
+        width: 26%;
+        height: 350px;
+        margin-top: 80px;
+    }
+
+    .productCardComponent {
+        width: 74%;
+        padding-bottom: 20px;
+    }
+
+    .mainBoxContainerAllProducts1 {
+        grid-template-columns: repeat(3, 1fr); /* 3 products per row on larger screens */
+    }
+}
+
+/* Smaller Screens */
+@media screen and (max-width: 999px) {
+    .shopByCategoryContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .filterComponentContainer {
+        height: 350px;
+        margin-top: 80px;
+        width: 305px; /* Adjust width to fit the smaller screen */
+        left: 18px;
+    }
+
+    .filterComponentContainer input[type="checkbox"] {
+        width: 18px; /* Slightly smaller for better fit */
+        height: 18px;
+        border-radius: 4px;
+    }
+
+    .filterComponentContainer label {
+        font-size: 14px; /* Reduced font size for smaller screens */
+    }
+
+    .search-box {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .allProductsHeadingBox {
+        font-size: 20px;
+        margin-top: 24px;
+    }
+
+    .mainBoxContainerAllProducts1 {
+        grid-template-columns: repeat(2, 1fr); /* 1 product per row on smaller screens */
+        gap: 30px;
+    }
+    .productImageContainer {
+        height: 300px;
+    }
+}
+/* Smaller Screens */
+@media screen and (max-width: 470px) {
+    .shopByCategoryContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .filterComponentContainer {
+        height: 350px;
+        margin-top: 80px;
+        width: 305px; /* Adjust width to fit the smaller screen */
+        left: 18px;
+    }
+
+    .filterComponentContainer input[type="checkbox"] {
+        width: 18px; /* Slightly smaller for better fit */
+        height: 18px;
+        border-radius: 4px;
+    }
+
+    .filterComponentContainer label {
+        font-size: 14px; /* Reduced font size for smaller screens */
+    }
+
+    .search-box {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .allProductsHeadingBox {
+        font-size: 20px;
+        margin-top: 24px;
+    }
+
+    .mainBoxContainerAllProducts1 {
+        grid-template-columns: repeat(1, 1fr); /* 1 product per row on smaller screens */
+        gap: 30px;
+    }
+    .productImageContainer {
+        height: 300px;
+    }
+}

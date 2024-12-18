@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    background-color: #f0f0f5; /* Background color */
+}
+
+.order-container {
+    padding: 20px;
+    max-width: 900px;
+    max-height: 700px;
+    margin: 0 auto;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  form {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+#delivery-status-group,
+#shipping-method-group,
+#tracking-number-group,
+#estimated-delivery-date-group,
+#refund-status-group,
+#refund-amount-group,
+#refund-date-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+    h2 {
+      color: #28a745;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .search-container {
+        margin: 0.5rem 0;
+    }
+    
+    .search-container input {
+        padding: 0.5rem;
+        width: 100%;
+        max-width: 400px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+    
+    .jj5{
+        margin-left: 100px;
+        max-width: 100%;
+        max-height: 430px;
+        overflow-y: auto;
+      }
+#order {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    transition: transform 0.3s;
+}
+
+#order:hover {
+    transform: translateY(-2px);
+}
+
+#order h2 {
+    color: #6DBE45; /* Light mehndi color */
+    font-size: 24px;
+    border-bottom: 2px solid #000; /* Black line */
+    padding-bottom: 10px;
+}
+
+#order p {
+    color: #555;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+#order-details {
+    margin-top: 20px;
+}
+
+#order-details h3 {
+    color: #6DBE45; /* Light mehndi color */
+    font-size: 20px;
+    font-weight: bold; /* Bold heading */
+}
+
+#order-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#order-details li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000; /* Black line */
+    padding: 10px 0;
+}
+
+#order-details img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 15px; /* Space between image and text */
+}
+
+.item-info {
+    flex-grow: 1; /* Allow this div to take up remaining space */
+}
+
+.quantity-price {
+    margin-top: 5px; /* Space above quantity */
+    display: flex;
+    flex-direction: column; /* Stack quantity and price vertically */
+}
+
+.quantity-price span {
+    margin-top: 2px; /* Space between quantity and price */
+}
+
+#total,
+#shipping-fee,
+#final-price {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#billing-info {
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#billing-info h3 {
+    color: #6DBE45; /* Light mehndi color */
+    margin-bottom: 10px;
+    font-weight: bold; /* Bold heading */
+}
+
+#billing-info p {
+    margin: 5px 0;
+}
+
+/* Filter container styles */
+.filter-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    margin: 20px 0; /* Space above and below */
+    padding: 10px; /* Padding around the filter box */
+    width: 100%; /* Full width of the container */
+}
+
+.filter-container label {
+    font-size: 18px; /* Increased font size for the label */
+    color: #000; /* Label color to black */
+    margin-right: 10px; /* Space between label and select */
+}
+
+.filter-container select {
+    padding: 10px; /* Padding inside the select box */
+    font-size: 16px; /* Increased font size */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    background-color: transparent; /* Transparent background */
+    color: #000; /* Text color */
+    cursor: pointer; /* Pointer cursor for select */
+}
+
+/* Order count styles */
+.order-count {
+    text-align: center; /* Center the count */
+    margin: 10px 0; /* Space above and below the count */
+    font-size: 20px; /* Increase font size */
+    font-weight: bold; /* Bold text */
+    color: #6DBE45; /* Light mehndi color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #order {
+        padding: 15px;
+        margin: 10px; /* Reduce margin for mobile */
+    }
+
+    #order h2 {
+        font-size: 20px; /* Smaller heading on mobile */
+    }
+
+    #order-details h3 {
+        font-size: 18px; /* Smaller subheading on mobile */
+    }
+
+    #order-details li {
+        padding: 8px 0; /* Reduce padding */
+    }
+
+    #total,
+    #shipping-fee,
+    #final-price {
+        font-size: 16px; /* Smaller text on mobile */
+    }
+
+    #billing-info {
+        padding: 10px; /* Reduce padding in billing info */
+    }
+
+    #billing-info h3 {
+        font-size: 18px; /* Smaller heading in billing info */
+    }
+
+    .filter-container {
+        flex-direction: column; /* Stack filter elements vertically on smaller screens */
+        align-items: center; /* Center filter elements */
+    }
+}
+
+@media (max-width: 480px) {
+    #order h2 {
+        font-size: 18px; /* Smaller heading on smaller mobile devices */
+    }
+
+    #order-details h3 {
+        font-size: 16px; /* Smaller subheading on smaller mobile devices */
+    }
+
+    #total,
+    #shipping-fee,
+    #final-price {
+        font-size: 14px; /* Smaller text on smaller mobile devices */
+    }
+
+    .filter-container select {
+        font-size: 14px; /* Smaller font for filter dropdown on small devices */
+    }
+}
+.filter-count-container {
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between filter and count */
+    margin: 20px 0; /* Margin around the container */
+}
+
+.order-count {
+    margin-left: -35px; /* Space between filter and order count */
+    font-size: 25px; /* Increase font size */
+    font-weight: bold; /* Bold text */
+    color: #000; /* Change color to black */
+}
+/* Payment Info Styles */
+#payment-info {
+
+    font-size: 18px; /* Same font size as shipping fee */
+    margin: 10px 0; /* Same margin as shipping fee */
+    color: #000; /* Set color to black */
+}

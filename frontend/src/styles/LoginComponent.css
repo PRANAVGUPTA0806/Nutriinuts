@@ -1,0 +1,287 @@
+#loginComponentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #e0f7fa 0%, #f1f8e9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#loginComponentContainer::before, #loginComponentContainer::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(76, 175, 80, 0.2);
+    opacity: 0.6;
+    z-index: 0;
+    animation: moveShapes 10s infinite ease-in-out alternate;
+}
+.google-login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .google-login-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .google-login-button img {
+    width: 18px;
+    height: 18px;
+  }
+
+#loginComponentContainer::before {
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    left: -150px;
+}
+
+#loginComponentContainer::after {
+    width: 300px;
+    height: 300px;
+    bottom: -100px;
+    right: -150px;
+}
+
+@keyframes moveShapes {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(20px, 20px);
+    }
+}
+
+#insideContainer, #insideContainer.card1 {
+    width: 35%; 
+    padding: 30px 25px 50px; 
+    border-radius: 16px;
+    background: linear-gradient(145deg, #ffffff, #f0f3f8);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #4caf50; 
+    position: relative;
+    z-index: 1;
+}
+
+#insideContainer:hover, #insideContainer.card1:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.1); 
+    padding: 10px; 
+    border-radius: 6px;
+}
+
+#logoDivBox {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#imgPngLogo {
+    width: 100px;
+}
+
+#loginTextBox {
+    display: flex;
+    justify-content: center;
+    font-weight: 600; 
+    font-size: 26px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+#loginInputField {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+#loginInputField input {
+    border: 1px solid #d1d9e6;
+    padding: 12px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9fbfd;
+}
+
+#loginInputField input:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+#passwordContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#passwordContainer input {
+    width: 100%;
+    padding-right: 40px; 
+}
+
+#togglePasswordButton {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#forgotPasswordBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#forgotPasswordBox span {
+    font-size: 14px;
+    color: #3E9842;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#forgotPasswordBox span:hover {
+    color: #8CC63F;
+    text-decoration: underline;
+}
+
+#rememberAndNotAUserMainBox {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+#rememberInputBox {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 12px;
+}
+
+#rememberInputBox span {
+    font-size: 14px;
+    color: #333;
+}
+
+#notAUserBox {
+    margin-top: 10px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+#notAUserBox span {
+    font-size: 16px;
+    color: #3E9842;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#notAUserBox span:hover {
+    color: #8CC63F;
+}
+
+#loginBtnContainer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#loginBtnContainer button {
+    background: linear-gradient(145deg, #4caf50, #81c784);
+    color: white;
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#loginBtnContainer button:hover {
+    background: linear-gradient(145deg, #388e3c, #4caf50);
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width: 1024px) {
+    #insideContainer, #insideContainer.card1 {
+        width: 60%;
+        padding: 20px;
+    }
+
+    #loginTextBox {
+        font-size: 24px; 
+    }
+
+    #loginBtnContainer button {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #insideContainer, #insideContainer.card1 {
+        width: 75%;
+        padding: 15px;
+    }
+
+    #loginTextBox {
+        font-size: 20px;
+    }
+
+    #loginBtnContainer button {
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #insideContainer, #insideContainer.card1 {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #loginTextBox {
+        font-size: 18px; 
+    }
+
+    #imgPngLogo {
+        width: 80px;
+        height: 80px;
+    }
+
+    #loginBtnContainer button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+#passwordHelp {
+    font-style: italic;
+    font-size: smaller;
+}

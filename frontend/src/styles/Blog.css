@@ -1,0 +1,155 @@
+.blogPageMainDiv {
+    margin-top: 40px;
+    padding: 12px;
+    margin-bottom: 40px;
+    background-color: #f4f4f4;
+}
+  
+.headingBlogContainer {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+}
+  
+.blogContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;  
+    padding: 14px;
+}
+  
+.blogDiv {
+    cursor: pointer;
+    border: 1px solid rgb(224, 224, 224);
+    border: 1px solid rgb(156, 30, 30);
+    border-radius: 18px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+    width: calc(45% - 16px);
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+  
+.blogDiv.expanded {
+    max-height: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+  
+.blogImageDiv {
+    display: flex;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blogImageDiv > img {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blogImageDiv > img:hover {
+    transform: scale(1.05);
+}
+  
+.blogTagLine {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation: fadeIn 0.5s ease-in;
+}
+  
+.blogTagLine:hover {
+    cursor: pointer;
+    animation: none;
+    color: #dc4646;
+}
+  
+.blogDivContent {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+  
+.blogDescription {
+    font-size: 16px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom, rgb(94, 93, 93), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    padding: 10px;
+    border-radius: 8px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.blogDiv.expanded .blogDescription {
+    max-height: none;
+    transition: max-height 0.5s ease;
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: rgb(94, 93, 93);
+    overflow: visible;
+}
+
+.readMoreButton {
+    background-color: #e37979;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px dotted #812b3f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.readMoreButton:hover {
+    background-color: #d06161;
+    transform: translateY(-3px);
+}
+
+.readMoreButton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+@media (min-width: 600px) and (max-width: 992px) {
+    .blogDiv {
+      width: calc(48% - 12px);
+    }
+}
+  
+@media only screen and (max-width: 600px) {
+    .blogDiv {
+      width: 100%;
+    }
+}

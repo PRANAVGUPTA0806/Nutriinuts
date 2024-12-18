@@ -1,0 +1,215 @@
+
+.offer1-container {
+  padding: 20px;
+  max-width: 900px;
+  max-height: 680px;
+  margin: 0 auto;
+  background-color: #e8f5e9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  h2 {
+    color: #28a745;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Create Offer Button */
+  .create-offer-button {
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-offer-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Search Container */
+  .search-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-container input {
+    width: 300px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-container input:focus {
+    border-color: #28a745;
+  }
+  .modal1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  /* Offer Form */
+  .offer-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .offer-form h2 {
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .offer-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .offer-form input[type="date"] {
+    padding: 10px 14px;
+  }
+  
+  .offer-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .cancel-button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  .jj2{
+    max-width: 100%;
+    max-height: 410px;
+    overflow-y: auto;
+  }
+  
+  .cancel-button:hover {
+    background-color: #e67e22;
+  }
+  .offer-form button:hover {
+    background-color: #218838;
+  }
+  
+  /* Table Styles */
+  .offers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .offers-table th, .offers-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .offers-table th {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .offers-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .offers-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Button Styles for Table Actions */
+  button {
+    padding: 8px 12px;
+    background-color: #8CC63E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #8CC63E;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .search-container input {
+      width: 80%;
+    }
+  
+    .create-offer-button {
+      width: 100%;
+    }
+  
+    .offer-form {
+      width: 95%;
+    }
+  
+    .offers-table th, .offers-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .offer-form input {
+      padding: 8px;
+    }
+  
+    .offer-form button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .offers-table th, .offers-table td {
+      font-size: 12px;
+    }
+  
+    button {
+      font-size: 12px;
+    }
+  }
+  

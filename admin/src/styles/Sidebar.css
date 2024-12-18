@@ -1,0 +1,81 @@
+.sidebar {
+    display: flex;
+    flex-direction: column; /* Row layout for larger screens */
+    justify-content: center; /* Center items in row layout */
+    padding: 30px 0; /* Vertical padding */
+    gap: 20px; /* Space between items */
+    width: 100%;
+    max-height: 100%; /* Limit height for sidebar */
+    max-width: 350px; /* Full width for sidebar */
+    background: #8CC63E; /* Sidebar background color */
+    overflow-x: auto; /* Allow horizontal scrolling if items exceed the width */
+    overflow-y: hidden; /* Prevent vertical overflow */
+}
+
+/* Sidebar items */
+.sidebar-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 10px; /* Increased padding for clickable area */
+    border-radius: 6px; /* Rounded corners */
+    margin: 5px; /* Margin for spacing between items */
+    background: #f6f6f6; /* Item background color */
+    color: #333; /* Ensure text is readable */
+    gap: 15px; /* Space between icon and text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.sidebar-item:hover {
+    background: #e0e0e0; /* Change background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .sidebar {
+        padding: 20px 0; /* Reduce padding on medium screens */
+        gap: 15px; /* Adjust gap between items */
+        flex-wrap: wrap; /* Allow items to wrap in the row */
+        justify-content: flex-start; /* Align items to start when wrapping */
+    }
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        max-height: 100%;
+        max-width: 100%;
+        align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+        text-align: center;
+        padding: 15px 0; /* Reduce padding on smaller screens */
+        gap: 10px; /* Adjust gap between items */
+    }
+
+    .sidebar-item {
+        flex: 1; /* Allow items to grow and fill available space */
+        justify-content: center; /* Center content in items */
+        min-width: 120px; /* Minimum width for each item */
+        text-align: center; /* Center text for small devices */
+        max-width: 150px; /* Set maximum width for each item */
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        max-width: 100%;
+        flex-direction: column; /* Stack items vertically for small screens */
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        padding: 10px 0; /* Further reduce padding */
+    }
+
+    .sidebar-item {
+        width: 100%; /* Full width for each item */
+        margin: 5px 0; /* Vertical margin for spacing between items */
+        align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+        text-align: center; /* Center text for small devices */
+    }
+}

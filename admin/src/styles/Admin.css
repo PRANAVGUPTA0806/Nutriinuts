@@ -1,0 +1,13 @@
+.admin {
+    display: flex;
+    flex-wrap: wrap; /* Allows flex items to wrap when screen size decreases */
+    background: linear-gradient(120deg, #e0f7fa 0%, #f1f8e9 100%);
+    min-height: 100vh;
+}
+
+@media(max-width: 800px) {
+    .admin {
+        flex-direction: column;
+    }
+}
+

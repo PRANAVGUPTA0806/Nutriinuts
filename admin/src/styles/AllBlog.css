@@ -1,0 +1,239 @@
+/* General Styles */
+.all-blog-container {
+    padding: 20px;
+    max-width: 900px;
+    max-height: 690px;
+    margin: 0 auto;
+    background-color: #e8f5e9;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #f4f9f4;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  .jj{
+    max-width: 100%;
+    max-height: 450px;
+    overflow-y: auto;
+  }
+  /* Create Blog Button */
+  .create-blog-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .create-blog-button:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Blog Table */
+  .blog-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .blog-table th,
+  .blog-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .blog-table th {
+    background-color: #388e3c;
+    color: white;
+  }
+  
+  .blog-table td {
+    background-color: #fff;
+  }
+  
+  .blog-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Action Buttons */
+  .update-button,
+  .delete-button {
+    background-color: #8CC63E;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+  }
+  
+  .update-button:hover {
+    background-color: #8CC63E;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Inputs */
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  input[type="file"] {
+    border: none;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Buttons */
+  .submit-button,
+  .cancel-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    background-color: #8CC63E;
+  }
+  
+  .submit-button:hover {
+    background-color: #8CC63E;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    margin-top: 10px;
+  }
+  
+  .cancel-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .all-blog-container {
+      padding: 10px;
+    }
+  
+    .blog-table th,
+    .blog-table td {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .create-blog-button,
+    .update-button,
+    .delete-button {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  
+    .modal-content {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .submit-button,
+    .cancel-button {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .create-blog-button {
+      font-size: 1rem;
+    }
+  
+    .blog-table th,
+    .blog-table td {
+      font-size: 0.8rem;
+    }
+  
+    .modal-content {
+      width: 100%;
+    }
+  
+    .submit-button,
+    .cancel-button {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  }
+  
