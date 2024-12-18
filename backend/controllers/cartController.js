@@ -51,7 +51,7 @@ const taxAmount = subTotal * taxRate; // 18% tax
 cart.tax=taxAmount;
 cart.subtotal=subTotal;
 const deliveryCharge = (subTotal+taxAmount)< 1000 ? 40 : 0;
-cart.totalPrice = subTotal + taxAmount+deliveryCharge-cart.dis;
+cart.totalPrice = Math.floor(subTotal + taxAmount + deliveryCharge - cart.dis); // Store only the integer part of totalPrice
 const totalQuantity = cart.products.reduce((sum, item) => sum + item.quantity, 0); // Calculate total quantity
 cart.totalQuantity = totalQuantity;
 cart.delivery=deliveryCharge;
@@ -119,7 +119,8 @@ const deliveryCharge = (subTotal+taxAmount) < 1000 ? 40 : 0;
 cart.tax=taxAmount;
 cart.subtotal=subTotal;
 cart.delivery=deliveryCharge;
-cart.totalPrice = subTotal + taxAmount+deliveryCharge-cart.dis;
+cart.totalPrice = Math.floor(subTotal + taxAmount + deliveryCharge - cart.dis); // Store only the integer part of totalPrice
+
 const totalQuantity = cart.products.reduce((sum, item) => sum + item.quantity, 0); // Calculate total quantity
 cart.totalQuantity = totalQuantity;
 
@@ -189,7 +190,7 @@ const removeFromCart1 = asyncHandler(async (req, res) => {
     cart.delivery = deliveryCharge;
 
     // Calculate total price (subtotal + tax + delivery charge)
-    cart.totalPrice = subTotal + taxAmount + deliveryCharge-cart.dis;
+    cart.totalPrice = Math.floor(subTotal + taxAmount + deliveryCharge - cart.dis); // Store only the integer part of totalPrice
 
     // Save the updated cart
     await cart.save();
@@ -209,7 +210,9 @@ const applyDiscount = asyncHandler(async (req, res) => {
 
     // Check if a discount code is already applied and remove it
     if (cart.discountCode) {
-        cart.totalPrice = cart.totalPrice + cart.dis;  // Add back the discount amount
+        cart.totalPrice = Math.floor(cart.totalPrice + cart.dis); // Store only the integer part of totalPrice
+        
+
         cart.dis = 0;  // Reset the discount amount
         cart.discountCode = null;  // Remove the discount code
     }
@@ -244,8 +247,7 @@ const removeDiscount = asyncHandler(async (req, res) => {
       // Remove the discount code and reset the discount amount
       cart.discountCode = null;
       cart.dis = 0; // Reset the discount
-      cart.totalPrice = cart.subtotal + cart.tax + cart.delivery; // Adjust total price without discount
-  
+      cart.totalPrice = Math.floor(cart.subtotal + cart.tax + cart.delivery); // Store only the integer part of totalPrice
       await cart.save();
   
       res.status(200).json({
