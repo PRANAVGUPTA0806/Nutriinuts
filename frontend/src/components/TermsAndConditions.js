@@ -8,7 +8,7 @@ function TermsAndConditions() {
 
       <h4 id="sub">Introduction</h4>
       <p id="content">
-        Welcome to <strong>One Snack</strong>! By using our website (www.onesnack.com) or purchasing our products, you agree to the following Terms and Conditions ("Terms"). These Terms apply to all visitors, users, and others who access or use our services.
+        Welcome to <strong>One Snack</strong>! By using our website (https://nurtriinuts1.onrender.com) or purchasing our products, you agree to the following Terms and Conditions ("Terms"). These Terms apply to all visitors, users, and others who access or use our services.
       </p>
       <p id="content">
         The terms “We,” “Us,” or “Our” refer to <strong>One Snack</strong>, and the terms “You” or “Your” refer to the users of our website and services.
@@ -88,13 +88,13 @@ function TermsAndConditions() {
       <h4 id="sub">Contact Information</h4>
       <p id="content">If you have any questions or feedback regarding these Terms, please contact us at:</p>
       <ul>
-        <li id="ls">Email: <a href="mailto:support@onesnack.com" id="mail">support@onesnack.com</a></li>
-        <li id="ls">Address: One Snack Headquarters,5915 sector 3, Faridabad- 121004
+        <li id="ls">Email: <a href="mailto:support@nutriinuts.com" id="mail">support@nutriinuts.com</a></li>
+        <li id="ls">Address: One Snack Headquarters,575 , Faridabad- 121004
 Contact Details:
-Name: Tarun Dagar
-Email: tarundagar@nutriinuts.com
-Phone number: 9992047272
-Office address: House no 5915 sector 3, Ballabgarh, Faridabad, 121004</li>
+Name: Pranav Gupta
+Email: pranavgupta.kuna08@gmail.com
+Phone number: 9144553344
+Office address: House no 575 , Faridabad, 121004</li>
       </ul>
     </div>
   );

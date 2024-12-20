@@ -82,7 +82,7 @@ const StarRate = ({ userId, productId, productModel }) => {
       })}
       <p style={{ color: "black" }}>
         <br />
-        "Your Rating": {rating}/5
+        Rating: {rating}/5
       </p>
     </>
   );

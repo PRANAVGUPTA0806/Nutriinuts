@@ -29,7 +29,7 @@ function ReturnAndRefundPolicy() {
 
       <h4 id="sub">3. RETURN PROCESS</h4>
       <ol>
-        <li id="ls">Contact our customer service team at <a href="mailto:support@onesnack.com" id="mail">support@onesnack.com</a> within 5 days of receiving your order.</li>
+        <li id="ls">Contact our customer service team at <a href="mailto:support@nutriinuts.com" id="mail">support@nutriinuts.com</a> within 5 days of receiving your order.</li>
         <li id="ls">Provide your order number, product details, and the reason for the return.</li>
         <li id="ls">Our team will provide instructions, including the return shipping address.</li>
         <li id="ls">The customer is responsible for the return shipping charges unless the product is defective or damaged upon arrival.</li>
@@ -77,7 +77,7 @@ function ReturnAndRefundPolicy() {
       </p>
 
       <h4 id="sub"><strong>CONTACT US</strong></h4>
-      <p id="content">For more information or to start a return, please contact us at <a href="mailto:support@onesnack.com" id="mail">support@onesnack.com</a></p>
+      <p id="content">For more information or to start a return, please contact us at <a href="mailto:support@nutriinuts.com" id="mail">support@nutriinuts.com</a></p>
 
       <p id="end">Thank you for choosing One Snack for your healthy snacking needs!</p>
     </div>

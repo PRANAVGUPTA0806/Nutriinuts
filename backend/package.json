@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nutriinuts/onesnack.git"
+    "url": "https://github.com/PRANAVGUPTA0806/Nutriinuts.git"
   },
-  "author": "pratiyushray,pranavgupta",
+  "author": "pranavgupta",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.1",

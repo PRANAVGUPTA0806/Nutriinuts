@@ -116,7 +116,7 @@ const ProductDetails = () => {
                 <p id="product-discount">{product.discountPercentage}</p> {/* Displaying discount */}
                 <div id="product-rating">
                     <StarRate userId={localStorage.getItem("id")} productId={product._id} productModel="allProducts" />
-                    {/* <p>Your Rating: {product.rating} / 5</p> */}
+                    {/* <p>Rating: {product.rating} / 5</p> */}
                 </div>
                 <div id="product-description">
                     <p>{product.productDescription}</p>

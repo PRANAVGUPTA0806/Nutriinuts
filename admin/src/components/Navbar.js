@@ -34,7 +34,7 @@ function Navbar() {
               src="https://res.cloudinary.com/dfagcn631/image/upload/v1721987516/logoimg_epbsrt.png"
               alt="logo"
             />
-            <h4>OneSnack Admin</h4>
+            <h4>Nutriinuts Admin</h4>
           </Link>
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
             <li onClick={removeActive}>
