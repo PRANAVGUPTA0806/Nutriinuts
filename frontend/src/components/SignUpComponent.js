@@ -177,7 +177,7 @@ function SignUpComponent() {
           <div>
             <img
               id="imgPngLogo"
-              src="https://res.cloudinary.com/dfagcn631/image/upload/v1721987516/logoimg_epbsrt.png"
+              src="https://res.cloudinary.com/dwprhpk9r/image/upload/v1737643273/cropped-OneSnack-Logo-without-bg-22_mttelg.png"
               alt="NutriiNuts Logo"
             />
           </div>
